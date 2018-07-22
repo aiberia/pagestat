@@ -79,7 +79,8 @@ SEGMENT: 7f6f00000000-7f7000000000 rw-p 00000000 00:2b 19096                    
 ```
 
 QEMU with 2M static hugepages:
-```./pagestat.py -m 2440
+```
+./pagestat.py -m 2440
 SEGMENT: 7ff00be00000-7ff10be00000 rw-p 00000000 00:2b 18936                      /dev/hugepages/libvirt/qemu/2-mordor/qemu_back_mem.pc.ram.oDAqHr (deleted)
 
   SMAPS PROPERTY                  VALUE
