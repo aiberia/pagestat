@@ -107,9 +107,6 @@ kpageflags_file = open("/proc/kpageflags", "rb")
 smaps_entries = parse_smaps(smaps_file)
 
 for (begin, end, line), values in sorted(smaps_entries.items(), key = lambda x: -x[1]["Size"]):
-    if values["Pss"] == 0:
-        continue
-
     vpfn_begin = begin // 4096
     vpfn_count = (end - begin) // 4096    
 
